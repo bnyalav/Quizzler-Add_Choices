@@ -10,9 +10,11 @@ import Foundation
 
 struct Question {
     let text: String
-    let answer: String
-    init(q: String, a: String) {//text ve answerı daha az metinlere eşitledik
+    let answer: [String]
+    let rightAnswer: String
+    init(q: String, a: [String], correctAnswer: String) {//text ve answerı daha az metinlere eşitledik
         text = q
         answer = a
+        rightAnswer = correctAnswer
     }
 }
